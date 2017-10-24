@@ -50,6 +50,13 @@ app.get('/about', (req, res) => {
   });
 });
 
+app.get('/project', (req, res) => {
+  res.render('project.hbs', {
+    pageTitle: 'Project page',
+    message: 'portfolio page here!'
+  });
+});
+
 app.get('/bad', (req, res) => {
   res.send({
     errorMessage: 'bad data!!!'
